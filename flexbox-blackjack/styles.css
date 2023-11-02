@@ -1,0 +1,61 @@
+#main-sections {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+#main-header{
+	border: black 3px solid;
+}
+
+#players{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border: black 3px solid;
+}
+
+#player-dealer{
+	display: flex;
+	flex-direction: column;
+	justify-content:;
+	border: black 3px solid;
+	gap: 5px;
+}
+
+#player-header{
+	border: black 3px solid;	
+}
+
+#card-holder{
+	display: flex;
+	justify-content: row;
+	border: black 3px solid;
+}
+
+#score-box{
+	border: black 3px solid;
+}
+
+#bottom-row{
+	display: flex;
+	flex-direction: row;
+	border: black 3px solid;
+}
+
+#message-area{
+	border: black 3px solid;
+}
+
+#actions{
+	border: black 3px solid;
+}
+
+#action-button{
+	border: black 3px solid;
+}
+
+
+

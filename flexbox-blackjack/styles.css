@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+}
+
 #main-sections {
 	display: flex;
 	flex-direction: column;
@@ -13,11 +17,24 @@
 }
 
 #main-header{
-	border: black 3px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(firebrick, maroon);
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 30px;
+	border: white 3px solid;
 }
 
 #message-area{
-	border: black 3px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lucinda Handwriting", cursive;, serif;
+	font-weight: bold;
+	font-size: 15px;
+	background-image: linear-gradient(maroon, firebrick);
+	border: white 3px solid;
 }
 
 #player-and-dealer{
@@ -30,6 +47,7 @@
 }
 
 #dealer{
+	background-color: darkgreen;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -40,6 +58,7 @@
 }
 
 #player{
+	background-color: darkgreen;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,7 +68,10 @@
 	flex: 2;
 }
 
-.player-header{
+.player-or-dealer-header{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+	background-color: gray;
 	display: flex;
 	justify-content: center;
 	border: black 3px solid;	
@@ -57,6 +79,7 @@
 }
 
 #dealer-card-holder{
+	background-image: linear-gradient(to bottom right, black, forestgreen);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -74,6 +97,7 @@
 }
 
 #player-card-holder{
+	background-image: linear-gradient(to bottom right, black, forestgreen);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -84,33 +108,51 @@
 }
 
 #actions{
+	background-image: linear-gradient(firebrick, maroon);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	border: black 3px solid;
 	flex: 1;
 	margin: 10px;
 }
 
 #action-button{
-	border: black 3px solid;
+	background-color: gray;
+	font-family: "Lucinda Handwriting", cursive;, serif;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: white 2px solid;
 	margin: 10px;
+}
+
+.player-card{
+	width: 175px;
+	height: 250px;
+	border: black 3px solid;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .card {
 	width: 125px;
 	height: 200px;
-	background-color: darkgreen;
 	border: black 3px solid;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
 .score-box{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+	background-color: gray;
 	border: black 3px solid;
 	margin: 10px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 

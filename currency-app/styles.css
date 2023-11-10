@@ -1,0 +1,17 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 40px;
+	padding: 5px;
+	border: black 2px solid;
+	background-color: green;
+}
+
+#starting {
+	font-style: italic;
+}

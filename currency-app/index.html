@@ -7,18 +7,23 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 	<h1>Amazing Currency Converter</h1>
-
-	<label for="money">Your money in USD</label>
-	<input type="text" id="money" placeholder="Your money...">
-	<input type="submit" onclick="moneyfunction()">
-
-	<p>This is the equivalent of...</p>
-	<p><span id="euro">__</span> Euros</p>
-	<p><span id="pound">__</span> Pounds</p>
-	<p><span id="cad">__</span> Canadian Dollars</p>
-	<p><span id="chf">__</span> Swiss Franc</p>
-	<p><span id="yen">__</span> Yen</p>
+	<div id="items">
+		<label for="money">Your money in USD:</label>
+		<input id="moneyusd" type="text" placeholder="Enter amount...">
+		<select id="currencies">
+			<option value="">Select a currency...</option>
+			<option value="eur">Euros (EUR)</option>
+			<option value="gbp">Pounds (GBP)</option>
+			<option value="cad">Canadian Dollars (CAD)</option>
+			<option value="chf">Swiss Franc (CHF)</option>
+			<option value="jpy">Yen (JYP)</option>
+		</select>
+		<button onclick="convert()">Submit</button>
+		<div id="converted"></div>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>

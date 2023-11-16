@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Copperplate", fantasy;, serif;
+	background-color: lightblue;
+}
+
+#wholename{
+	margin-top: 20px;
+	font-size: 30px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+h1 {
+	background-image: linear-gradient(paleturquoise, white);
+	border: black 3px solid;
+	padding: 5px;
+	font-size: 50px;
+}
+
+#inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	border: black 2px solid;
+	background-color: lightcyan;
+}
+
+#color, #month, #age{
+	text-align: center;
+}
+
+label {
+	font-size: 20px;
+}

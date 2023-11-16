@@ -1,4 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body {
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(to right, #ff3333, #3399ff); /* Red to blue gradient */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(to right, #ff4081, #18ffff); /* Pink to cyan ombre */
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px black; /* Black border around the text */
+}
+
+#inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, select, input, button {
+    margin: 10px;
+    color: #000000; /* Black text for better contrast */
+}
+
+input, select, button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(to right, #ff5252, #00bfa5); /* Red to teal ombre */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff6e6e, #64ffda); /* Lighter red to lighter teal */
+}
+
+#wholename {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/*body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,4 +93,4 @@ h1 {
 
 label {
 	font-size: 20px;
-}
+}*/

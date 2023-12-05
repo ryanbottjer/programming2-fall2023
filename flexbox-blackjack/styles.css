@@ -20,9 +20,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(firebrick, maroon);
+	background-color: maroon;
 	font-family: "Copperplate", fantasy;, serif;
-	font-size: 30px;
+	font-size: 40px;
+	padding: 40px;
+	font-weight: bold;
 	border: white 3px solid;
 }
 
@@ -30,11 +32,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Lucinda Handwriting", cursive;, serif;
-	font-weight: bold;
-	font-size: 15px;
-	background-image: linear-gradient(maroon, firebrick);
+	padding: 10px;
+	background-color: maroon;
 	border: white 3px solid;
+}
+
+#messagecontent{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 30px;
 }
 
 #player-and-dealer{
@@ -47,31 +52,31 @@ body {
 }
 
 #dealer{
-	background-color: darkgreen;
+	background-image: linear-gradient(to bottom right, darkgreen, black);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: black 3px solid;
-	gap: 5px;
-	align-items: stretch;
-	flex: 1;
-}
-
-#player{
-	background-color: darkgreen;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border: black 3px solid;
+	border: white 3px solid;
 	gap: 5px;
 	align-items: stretch;
 	flex: 2;
 }
 
+#player{
+	background-image: linear-gradient(to bottom right, darkgreen, black);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: white 3px solid;
+	gap: 5px;
+	align-items: stretch;
+	flex: 3;
+}
+
 .player-or-dealer-header{
 	font-family: "Copperplate", fantasy;, serif;
 	font-size: 20px;
-	background-color: gray;
+	background-color: brown;
 	display: flex;
 	justify-content: center;
 	border: black 3px solid;	
@@ -79,14 +84,20 @@ body {
 }
 
 #dealer-card-holder{
-	background-image: linear-gradient(to bottom right, black, forestgreen);
+	background-color: forestgreen;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	border: black 3px solid;
 	margin: 10px;
 	flex: 1;
+}
+
+.cards{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
 }
 
 #cards-and-actions{
@@ -97,18 +108,18 @@ body {
 }
 
 #player-card-holder{
-	background-image: linear-gradient(to bottom right, black, forestgreen);
+	background-color: forestgreen;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	border: black 3px solid;
 	margin: 10px;
-	flex: 3;
+	flex: 4;
 }
 
 #actions{
-	background-image: linear-gradient(firebrick, maroon);
+	background-color: forestgreen;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -117,45 +128,43 @@ body {
 	margin: 10px;
 }
 
-#action-button{
-	background-color: gray;
-	font-family: "Lucinda Handwriting", cursive;, serif;
+.action-button{
+	background-color: brown;
+	font-family: "Copperplate", fantasy;, serif;
 	font-size: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: white 2px solid;
+	border: black 2px solid;
 	margin: 10px;
 }
 
-.player-card{
-	width: 175px;
-	height: 250px;
-	border: black 3px solid;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.card {
+.dealercard{
 	width: 125px;
 	height: 200px;
-	border: black 3px solid;
-	margin-top: 10px;
-	margin-bottom: 20px;
+}
+
+.playercard{
+	width: 150px;
+	height: 225px;
 }
 
 .score-box{
-	font-family: "Copperplate", fantasy;, serif;
-	font-size: 20px;
-	background-color: gray;
+	background-color: brown;
 	border: black 3px solid;
 	margin: 10px;
+	padding: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+#userscoretext, #dealerscoretext{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+}
 
-
-
-
+.games-won{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+}

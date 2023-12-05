@@ -10,10 +10,12 @@
 	<div id="main-sections">
 		<div id="both-headers">
 			<div id="main-header">
-				<p>Flexbox Blackjack</p>
+			Flexbox Blackjack
 			</div>
 			<div id="message-area">
-				<p>Player's Turn!</p>
+				<div id="messagecontent">
+				Press 'reset' to begin the game.
+				</div>
 			</div>
 		</div>
 		<div id="player-and-dealer">
@@ -22,12 +24,18 @@
 					<p>Dealer</p>
 				</div>
 				<div id="dealer-card-holder">
-					<img class="card" src="card.png"></img>
-					<img class="card" src="card.png"></img>
-					<img class="card" src="card.png"></img>
+					<div class="cards">
+						<img class="dealercard" id="dealercard1" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard2" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard3" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard4" src="images/blank.svg"></img>
+					</div>
+					<p class="games-won"> Games Won: </p>
 				</div>
-				<div class="score-box">
-					<p>Score: __ </p>
+				<div class="score-box" id="dealerscore">
+					<div id="dealerscoretext">
+					Score: __ 
+					</div>
 				</div>
 			</div>
 			<div id="player">
@@ -36,26 +44,34 @@
 				</div>
 				<div id="cards-and-actions">
 					<div id="player-card-holder">
-						<img class="player-card" src="card.png"></img>
-						<img class="player-card" src="card.png"></img>
-						<img class="player-card" src="card.png"></img>
+						<div id="cards">
+							<img class="playercard" id="usercard1" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard2" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard3" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard4" src="images/blank.svg"></img>
+						</div>
+						<p class="games-won"> Games Won: </p>
 					</div>
 					<div id="actions">
-						<div id="action-button">
+						<button onclick="hit()" disabled = "true" class="action-button" id="hitbutton">
 							<p> Hit </p>
-						</div>
-						<div id="action-button">
+						</button>
+						<button onclick="stand()" disabled = "true" class="action-button" id="standbutton">
 							<p> Stand </p>
-						</div>
-						<div id="action-button">
+						</button>
+						<button onclick="reset()" class="action-button" id="resetbutton">
 							<p> Reset </p>
-						</div>
+						</button>
 					</div>
 				</div>
-				<div class="score-box">
-					<p>Score: __ </p>
+				<div class="score-box" id="userscore">
+					<div id="userscoretext">
+					Score: __ 
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
+</html>

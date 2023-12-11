@@ -121,16 +121,13 @@ function hit(){
 			dealerWin()
 			hitButton.disabled = true;
 		}
-	if (userScore > 21){
+	}
+	if (userScore >= 21){
 		dealerWin()
-		hitButton.disabled = true;
-	}
-	}
+		}
 	userScoreElement.innerText = "Score: " + userScore
-	if (userScore = 21){
-		hitButton.disabled = true;
-	}
 }
+
 
 function stand(){
 	if (dealerScore < 17){

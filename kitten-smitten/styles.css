@@ -1,0 +1,50 @@
+button{
+	all: unset;
+	border: none;
+	background: none;
+}
+
+a{
+	text-decoration: none !important;
+	color: #10a79d !important;
+	font-size: 20px;
+	font-style: italic;
+	font-family: Trebuchet MS, serif;
+}
+
+a:hover{
+	color: #08524d !important;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+}
+
+.header::after{
+	flex: 1;
+	content: '';
+}
+
+.header-logo{
+	display: flex;
+	flex: 1;
+}
+
+.logo{
+	width: 175px;
+	height: 150px;
+	padding: 15px;
+}
+
+.header-buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 100px;
+}
+
+#carousel{
+	padding: 20px;
+	display: flex;
+}

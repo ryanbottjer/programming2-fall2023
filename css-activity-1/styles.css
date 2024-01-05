@@ -1,0 +1,49 @@
+body {background-color: #650D1B;}
+
+nav {padding: 10px;}
+
+h1 {
+  font-family: cursive;, Helvetica, sans-serif;
+  background-color: #FAF4D3;
+  text-align: center;
+  border: 4px; black;
+  border-style: solid;
+  font-size: 50px
+}
+
+h2 {
+  font-family: cursive;, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {font-family: cursive;, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 10px;
+}
+
+p {
+    text-align: center;
+    line-height: 10px;
+}
+
+#apps
+    {
+    background-color: #FAF4D3;
+    border:4px, black;
+    border-style: solid;
+    column-width: 650px;
+    margin: 50px;
+    float: left;
+}
+
+#pasta
+    {
+    background-color: #FAF4D3;
+    border:4px, black;
+    border-style: solid;
+    column-width: 600px;
+    margin: 50px;
+    float: right;
+}

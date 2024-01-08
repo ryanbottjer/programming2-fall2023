@@ -4,7 +4,11 @@ button{
 	background: none;
 }
 
-a{
+p{
+	font-family: Trebuchet MS, serif;
+}
+
+.mainButton{
 	text-decoration: none !important;
 	color: #10a79d !important;
 	font-size: 20px;
@@ -12,7 +16,7 @@ a{
 	font-family: Trebuchet MS, serif;
 }
 
-a:hover{
+.mainButton:hover{
 	color: #08524d !important;
 }
 
@@ -27,7 +31,7 @@ a:hover{
 	content: '';
 }
 
-.header-logo{
+.headerLogo{
 	display: flex;
 	flex: 1;
 }
@@ -38,7 +42,7 @@ a:hover{
 	padding: 15px;
 }
 
-.header-buttons{
+.headerButtons{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -57,10 +61,18 @@ a:hover{
 }
 
 #intro{
-	background-color: #f7f7f7;
-	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+/*	background-color: #f7f7f7;*/
+/*	border: 2px solid black;*/
 	flex: 1;
 	margin: 20px;
+	padding: 30px;
+	gap: 20px;
+	justify-content: center;
+	font-family: Trebuchet MS, serif;
+	align-items: center;
+	text-align: justify;
 }
 
 #row2{
@@ -80,3 +92,87 @@ a:hover{
 	margin: 20px;
 }
 
+#currentFosters{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 20px;
+	margin: 20px;
+	height: 50vh;
+}
+
+.foster{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px black solid;
+	background-color: #f7f7f7;
+	width: 100%;
+}
+
+#favsTitle{
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	font-family: Trebuchet MS, serif;
+	color: #10a79d;
+	font-weight: bold;
+}
+
+#fosterFavs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 20px;
+	margin: 20px;
+	height: 30vh;
+}
+
+.fav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex: 1;
+	padding: 20px;
+/*	background-color: #f7f7f7;*/
+/*	border: 2px solid black;*/
+	height: 100%;
+	aspect-ratio: 1;
+}
+
+.favImage{
+	height: 70%;
+	width: 70%;
+	aspect-ratio: 1;
+}
+
+.favHeader{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.favLink{
+	font-stlye: normal;
+	text-decoration: none !important;
+	color: black !important;
+	font-size: 20px;
+	font-style: italic;
+	font-family: Trebuchet MS, serif;
+}
+
+.favLink:hover{
+	text-decoration: underline !important;
+}
+
+#popupWindow{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f7f7f7;
+	border: 2px solid black;
+	width: 30vh;
+	height: 30vh;
+}

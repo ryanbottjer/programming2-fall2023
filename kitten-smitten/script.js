@@ -30,5 +30,3 @@ emailjs.send(serviceID, templateID, inputFields)
         console.log(error);
         submitBtn.innterText = "Something went wrong...";
     });
-
-});
